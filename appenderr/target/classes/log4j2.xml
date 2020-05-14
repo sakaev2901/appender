@@ -1,0 +1,15 @@
+<Configuration xmlns:xi="http://www.w3.org/2001/XInclude" status="WARN">
+
+    <Appenders>
+<!--        говорим что есть такой аппендер-->
+        <JdbcAppender name="JdbcAppender"/>
+    </Appenders>
+    <Loggers>
+<!--        переопределяем дефолтный логгер нашим новым-->
+        <Root level="DEBUG">
+            <AppenderRef ref="JdbcAppender"/>
+        </Root>
+    </Loggers>
+
+
+</Configuration>

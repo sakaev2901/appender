@@ -1,0 +1,6 @@
+create table logs
+(
+    message varchar,
+    level   varchar(50),
+    date    varchar(100)
+);
